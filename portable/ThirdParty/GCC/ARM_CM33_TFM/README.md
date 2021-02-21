@@ -65,7 +65,7 @@ To enable calling TF-M services by the Non-Secure Side, the files below should b
 * ```trusted-firmware-m\build\install\export\tfm\lib\s_veneers.o```
   This object file contains all the Non-Secure callable functions exported by
   TF-M and it should be linked when generating the Non-Secure image.
-
+ *UPDATE: Link FreeRTOS with libplatform_ns.a which implements _read() and PSA TF-M FW Update calls.
 
 
 *Copyright (c) 2020, Arm Limited. All rights reserved.*
